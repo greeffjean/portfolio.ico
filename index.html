@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jean Greeff</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+
+
+  <div class="main_wrapper">
+
+    <!-- Nav -->
+    <div class="nav_bar">
+      <div class="logo"> Jean Greeff </div>
+      <div class="git_hub">
+          <a id="email" href="mailto:greeffjean@gmail.com?subject=Jean Greeff Portfolio">Email</a>
+        <div class="git_hub_link">
+          <img src="resources/githublogo.png"></img> <a target="new" href="https://github.com/greeffjean">Github</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Inner Wrapper -->
+    <div class="inner_wrapper">
+
+      <!-- Overview -->
+      <div class="middle_item overview">
+        <h1>Overview</h1>
+        <p> I am a Front-End Developer, my particular strengths lie in building out UI and UX Front-End
+          Applications with React,
+          I am ambitious and forward thinking, resourcefull and flexible. <button id=indent><a href="CV.pdf" download>Download CV</a></button>
+          <br>
+          <br>
+          Furthermore I have an eye for detail, a determination to deliver excellent work and a positve attitude.
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1>3 things in my resume you should not miss and why</h1>
+          <br>
+          <br>
+          <h5> My Auth Application I built with Serverless</h5>
+            <ul>
+                <li> <span>&#8226;</span> <p>This app has been built with, React, CSS, AWS Amplify, React Router, Bootstrap and a Deezer API.</li>
+              <li> <span>&#8226;</span> <p>This app has been built with stateless React components, React hooks in an attempt to move away from class components and AWS Amplify.</p></li>
+              <li> <span>&#8226;</span> <p>The React hooks - "useContext" and "createContext" are used to set a global state and
+                  manages the applications Authentication in this way.</p> </li>
+              <li> <span>&#8226;</span> <p>React Router is used to keeps the UI and the URL in sync.</p> </li>
+              <li> <span>&#8226;</span> <p>The Application's main components are wrapped in functions that grant or deny access to its's child components based on
+                  the global authentication state variable's value, if the function returns false the user is redirected
+                  to a login page.</p> </li>
+              <li> <span>&#8226;</span> <p>There is a "useEffect" hook in use that allows users to stay logged in when a page
+                  refresh occurs.</p></li>
+              <li> <span>&#8226;</span> <p>I created a custom hook that manages user-form-field inputs in my application.</p></li>
+              <li> <span>&#8226;</span> <p>There is a music-genre-bar on the "SearchTracks" component that communicates with a Deezer API and returns
+                  data-objects which is then integrated into the DOM.</p></li>
+              <li> <span>&#8226;</span> <p>I created a component wrapper that handles all the routes which has made the routing of this application very easy.</p></li>
+              <li id="indent"><button><a href="https://github.com/greeffjean/my-app-client" target="new">GitHub</a></button></p></li>
+          </ul>
+
+          <br>
+          <br>
+          <h5>My Music App, Sirion Cloud.</h5>
+          <ul>
+              <li><span>&#8226;</span><p>This app has been built with React, Sass and a Deezer API</p></li>
+            <li> <span>&#8226;</span> <p>Sirion Cloud uses a Deezer API and returns data-objects which is then integrated into the DOM, the UI and UX of this site is fresh and eye catching.</p></li>
+              <li> <span>&#8226;</span> <p>This application has been built with statefull components which uses props to pass state to other components.</p></li>
+            <li> <span>&#8226;</span> <p>This application contains in short a home-component, album-component, tracklist-component and a
+                favourites-component.</p> </li>
+            <li> <span>&#8226;</span> <p>I have used JavaSript's fetch method to make requests to the Deezer database.</p></li>
+            <li> <span>&#8226;</span> <p>You will find a music player that keeps track of the current music-item selected accross the board, while
+                it can also skip back and forth, I built this out from scratch.
+                There is also multiple functions that check and make sure that the music player is in sync with the
+                applications state, for instance: it relies on a onplay and onpause event listener to ensure that the UI
+                of this player is in sync with whats been selected by the user.</p></li>
+            <li> <span>&#8226;</span> <p>I have made use of React Refs in the app to also sync users input with the app's main state, for
+                instance a html input field within a child component passes information to a top level
+                component and then sets the new state and returns a function to call on our Deezer API.</p></li>
+            <li> <span>&#8226;</span> <p>I have created a module that contains all our fetch functions, this module is exported
+                and used by the home-component of the application and returns requested music data.</p></li>
+            <li> <span>&#8226;</span> <p>Sirion Cloud makes use of inline class-name queries to ensure that the UI of the app is reflecting what's occuring with the main state of our application.</p></li>
+            <li> <span>&#8226;</span> <p>I have created a favourites component that acts as a storage facilty for the user's tracks that he/she will like.</p></li>
+            <li> <span>&#8226;</span> <p>Sirion Cloud uses state to also keep track of which songs where selected as favourites and reflects that in the UI throughout the users session.</p></li>
+            <li id="indent"><button><a href="https://greeffjean_sirion_cloud.surge.sh" target="new">Visit Website</a></button>
+              <button><a href="https://github.com/greeffjean/Sirion-Cloud" target="new">GitHub</a></button></p> </li>
+          </ul>
+          <br>
+          <br>
+          <h5>My Movie Database Application</h5>
+          <ul>
+            <li><span>&#8226;</span><p>This app has been built with React, Sass, React Router and a film database API</p></li>
+            <li><span>&#8226;</span><p>The Movie Database App is an example of your typical google play store application.</p></li>
+            <li> <span>&#8226;</span> <p>This application has been built with statefull components which uses props to pass state to other components.</p></li>
+            <li> <span>&#8226;</span> <p>React Router is used to keeps the UI and the URL in sync.</p> </li>
+            <li><span>&#8226;</span><p>Here I make use of "The Movie Database" API.</p></li>
+            <li><span>&#8226;</span><p>I have stored all my API fetch functions in a module.</p></li>
+            <li><span>&#8226;</span><p>Here we have made use of React's Ref attribute to access a top level component from a child component's "input field".</p></li>
+            <li><span>&#8226;</span><p>I have used React's JSX syntax to inject component-state-data-objects into html components.</p></li>
+            <li><span>&#8226;</span><p>Here is a basic run thtough of the applications build.</p></li>
+            <li><span>&#8226;</span><p>1. The App component renders a SearchBar and FilmDisplay component, and here I pass functions and state as props the child components.
+            </p></li>
+            <li><span>&#8226;</span><p>2. FilmDisplay is assigned a route of "/" making it the default-route/homepage, whe then get redirected by means of a React-Router Redirect feature and the
+              url changes to /film/:id, which also becomes the path to FilmDisplay's child that actually contains all the UI components that reflect the API data, this way assinging the URL route attribute "id"
+              to the data-object's id selected by ther user we can keep track of our routing.
+            </p></li>
+            <li><span>&#8226;</span><p>3. FilmInfo is rendered by FilmDisplay and when this component is Mounted a API call fires and fetches the default-data of our home page along with the corresponding
+              id attribute of this object that the API function returned, which is then assinged to our route's "id" attribute. 
+            </p></li>
+            <li><span>&#8226;</span> <p>4. When a user uses the SearchBar component to search for film titles we access a module containing all our API fetch methods, we do this by using a
+               "onChange" event listener on a input-html-component in SearchBar.</p></li>
+            <li><span>&#8226;</span><p>5. Once our search function has done its job and returned an array of data-objects the SearchBar component will display the array,
+               once a user selects an item from the list the state and UI of FilmInfo changes by means of an onClick event listener.
+            </p></li>
+            <li id="indent"><button><a href="https://greeffjean_moviedb.surge.sh/" target="new">Visit Website</a></button><button><a href="https://github.com/greeffjean/Movie-DB" target="new">GitHub</a></button></p></li>
+          </ul>
+      </div>
+
+
+      <!-- Projects -->
+      <div class="middle_item project">
+        <h1> Top Projects </h1>
+        <div class="projects_row">
+
+          <!-- project -->
+
+          <div class="project">
+              <div class="top"><img src="resources/sirion.png"></div>
+              <div class="bottom">
+                <div class="bottom_left">
+                    <h5>Sirion Cloud</h5>
+                  <h4>Sound-Cloud Clone</h4>
+                  <div class="built_with">
+                      <ul>
+                          <li>React.JS |</li>
+                          <li>Sass |</li>
+                          <li>Deezer API</li>
+                        </ul>
+                  </div>
+                </div>
+                <div class="bottom_right">
+                    <a target="new" href="https://github.com/greeffjean/Sirion-Cloud"><img src="resources/github2.png"></a>  
+                    <a target="new" href="https://greeffjean_sirion_cloud.surge.sh"><img src="resources/planet.png" ></a>  
+                </div>
+              </div>
+          </div>
+
+
+
+          <!-- project -->
+
+          <div class="project">
+              <div class="top"><img src="resources/rousant.png"></div>
+              <div class="bottom">
+                <div class="bottom_left">
+                  <h5>Rousant</h5>
+                  <h4>Power Supply Company</h4>
+                  <div class="built_with">
+                      <ul>
+                          <li>HTML |</li>
+                          <li>CSS |</li>
+                          <li>jQuery |</li>
+                          <li>Slick.js |</li>
+                          <li>Parralax.js |</li>
+                          <li>JavaScript</li>
+                        </ul>
+                  </div>
+                </div>
+                <div class="bottom_right">
+                    <a target="new" href="https://github.com/greeffjean/Rousant-International"><img src="resources/github2.png"></a>  
+                    <a target="new" href="https://rousant.co.za/"> <img src="resources/planet.png" ></a> 
+                </div>
+              </div>
+          </div>
+
+
+          <!-- project -->
+
+          <div class="project">
+              <div class="top"><img src="resources/sirion.png"></div>
+              <div class="bottom">
+                <div class="bottom_left">
+                  <h5>Sirion Cloud Auth</h5>
+                  <h4>Minified Sirion Cloud + Auth</h4>
+                  <div class="built_with">
+                      <ul>
+                          <li>React.JS |</li>
+                          <li>CSS |</li>
+                          <li>AWS Amplify |</li>
+                          <li>React Router |</li>
+                          <li>Bootstrap |</li>
+                          <li>Deezer API</li>
+                        </ul>
+                  </div>
+                </div>
+                <div class="bottom_right">
+                    <a target="new" href="https://github.com/greeffjean/my-app-client"><img src="resources/github2.png"></a>  
+                </div>
+              </div>
+          </div>
+
+
+
+          <!-- project -->
+
+          <div class="project">
+              <div class="top"><img src="resources/casa.png"></div>
+              <div class="bottom">
+                <div class="bottom_left">
+                  <h5>Casa Ponta Nduvene</h5>
+                  <h4>Beach House Mozambique</h4>
+                  <div class="built_with">
+                      <ul>
+                          <li>HTML |</li>
+                          <li>CSS |</li>
+                          <li>jQuery |</li>
+                          <li>Fullpage.js |</li>
+                          <li>ViewBox.js |</li>
+                          <li>JavaScript</li>
+                        </ul>
+                  </div>
+                </div>
+                <div class="bottom_right">
+                    <a target="new" href="https://github.com/greeffjean/Casa-Ponta-Nduvene"><img src="resources/github2.png"></a>  
+                    <a target="new" href="https://greeffjean_casa_ponta_nduvene.surge.sh"><img src="resources/planet.png" ></a>   
+                </div>
+              </div>
+          </div>
+
+
+
+          <!-- project -->
+
+          <div class="project">
+              <div class="top"><img src="resources/movie.png"></div>
+              <div class="bottom">
+                <div class="bottom_left">
+                  <h5>Movie Database</h5>
+                  <h4>Film Search App</h4>
+                  <div class="built_with">
+                      <ul>
+                          <li>React.JS |</li>
+                          <li>Sass |</li>
+                          <li>React Router |</li>
+                          <li>Movie Database API</li>
+                        </ul>
+                  </div>
+                </div>
+                <div class="bottom_right">
+                    <a target="new" href="https://github.com/greeffjean/Movie-DB"><img src="resources/github2.png"></a>  
+                    <a target="new" href="https://greeffjean_moviedb.surge.sh/"><img src="resources/planet.png" ></a>  
+                </div>
+              </div>
+          </div>
+
+
+          <!-- project -->
+
+          <div class="project">
+
+              <div class="top"><img src="resources/routing.png"></div>
+              <div class="bottom">
+                <div class="bottom_left">
+                  <h5>React Router Project</h5>
+                  <h4>Basic Routing</h4>
+                  <div class="built_with">
+                      <ul>
+                          <li>React.JS |</li>
+                          <li>Sass |</li>
+                          <li>React Router</li>
+                        </ul>
+                  </div>
+                </div>
+                <div class="bottom_right">
+                 <a target="new" href="https://github.com/greeffjean/React-Router-Project"><img src="resources/github2.png"></a> 
+                 <a target="new" href="https://greeffjean_react_router.surge.sh"> <img src="resources/planet.png" ></a>  
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- Skills -->
+      <div class="middle_item skills">
+        <h1> Skills </h1>
+            <div class="skills_row">
+                <h4>Front-End</h4>
+                <div class="inner">
+                    <img src="./resources/skill2.png">
+                    <img src="./resources/skill4.png">
+                    <img src="./resources/skill7.png">
+                    <img src="./resources/skill13.png">
+                </div>
+              </div>
+
+               <div class="skills_row">
+                  <h4>Cloud Services</h4>
+                  <div class="inner"></div>
+                  <img src="./resources/aws-lambda.svg">
+               </div>
+               <div class="skills_row">
+                  <h4>Testing</h4>
+                  <div class="inner">
+                      <img src="./resources/skill8.png">
+                      <img src="./resources/skill9.png">
+                  </div>
+               </div>
+
+               <div class="skills_row">
+                  <h4>Deployment</h4>
+                  <div class="inner">
+                      <img src="./resources/skill10.png">
+                      <img  src="./resources/netlify.svg">
+                      <img  src="./resources/github.svg">
+                  </div>
+ 
+        </div>
+      
+      </div>
+
+      <!-- CV -->
+      <div class="middle_item cv">
+        <h1> CV </h1>
+
+        <!-- Cover Letter -->
+  
+        <h3>I am interested in growing my knowledge and experience of</h3>
+        <p>Building production ready rest API’s</p>
+        <p>In experience of serverless particularly AWS Lambda, open to any other cloud service providers.</p>
+        <p>Implementing performant API integration in the frontend.</p>
+        
+
+
+        <br>
+        <br>
+        <h3>I am a valueble asset because</h3>
+        <p>I really value and embody as best I can, integrity, quality and reliability.</p>
+        <p>I work well in a team and learn really fast.</p>
+        <p>Highly ambitious and love working with people.</p>
+        <p>Sharp and forward thinking, and able to take initiative where required.</p>
+        <p>Creative, focused and constructive.</p>
+        <br>
+        <br>
+
+
+
+        <!-- Personal Information -->
+        <h3>Personal Information</h3>
+        <ul>
+          <li>
+            <h5>First Name / Surname</h5>
+            <p>Jean Charl Greeff</p>
+          </li>
+          <li>
+            <h5>Email</h5>
+            <a id="email" href="mailto:greeffjean@gmail.com?subject=Jean Greeff Portfolio">greeffjean@gmail.com</a>
+          </li>
+          <li>
+            <h5>Nationality</h5>
+            <p>South African</p>
+          </li>
+          <li>
+            <h5>Date of Birth</h5>
+            <p>1994/05/09</p>
+          </li>
+          <li>
+            <h5>Gender</h5>
+            <p>Male</p>
+          </li>
+        </ul>
+
+        <!-- Workk Experience -->
+        <h3>Work Experience</h3>
+        <ul>
+          <li>
+            <h5>Dates</h5>
+            <p>Jan 2019 - Present Date</p>
+          </li>
+          <li>
+            <h5>Position</h5>
+            <p>Freelance Developer</p>
+          </li>
+          <li>
+            <h5>Experience</h5>
+            <p>I provided the following clients with websites:</p>
+          </li>
+          <li>
+            <p>1. AquaHound </p>
+          </li>
+          <li>
+            <p>2. Rousant International</p>
+          </li>
+          <li>
+            <p>3. Casa Ponta Nduvene (Private Entity)</p>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h5>Dates</h5>
+            <p>2018 - 2019</p>
+          </li>
+          <li>
+            <h5>Position</h5>
+            <p>Entrepreneur</p>
+          </li>
+          <li>
+            <h5>Experience</h5>
+          </li>
+          <li>
+            <p>1. Ran a Health Food stall at Earth Fair and Gardens Market in Cape Town </p>
+          </li>
+          <li>
+            <p>2. Co-owned and managed a small scale health food company. This entailed purchasing of products,
+              packaging and distribution.</p>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h5>Dates</h5>
+            <p>Jan 2018 - Aug 2018</p>
+          </li>
+          <li>
+            <h5>Position</h5>
+            <p>Surf Coach</p>
+          </li>
+          <li>
+            <h5>Experience</h5>
+            <p>Teaching, client relations</p>
+          </li>
+          <li>
+            <h5>Employer / Address</h5>
+            <p> Surf Emporium 66 Beach Rd, Muizenberg, Cape Town, 7945</p>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h5>Dates</h5>
+            <p>January 2013 - February 2018</p>
+          </li>
+          <li>
+            <h5>Position</h5>
+            <p>Freelance Visual Artist</p>
+          </li>
+          <li>
+            <h5>Experience</h5>
+            <p>1. I have been commissioned by several clients both locally and abroad.</p>
+          </li>
+          <li>
+            <p> 2. I have been awarded an Arts Residency Scholarship by AMEXCID.</p>
+          </li>
+          <li>
+            <p> 3. I have exhibited: </p>
+          </li>
+          <li>
+            <p> 3.1 Twice abroad - Puerto Vallarta, Jalisco Mexico.</p>
+          </li>
+          <li>
+            <p> 3.2 Solo Exhibition, Mexican Embassy Pretoria, Pretoria, South Africa</p>
+          </li>
+          <li>
+            <p> 3.3 Solo Exhibition Alliance Francais, Cape Town, South Africa</p>
+          </li>
+        </ul>
+
+
+        <!-- Education and Training -->
+        <h3>Education and Training</h3>
+        <ul>
+          <li>
+            <h5>Dates</h5>
+            <p> 2018 - Current Date</p>
+          </li>
+          <li>
+            <h5>Principal Studies</h5>
+            <p>HTML5, CSS3, JavaSript, React, jQuery, Git, Command Line, API Interactions, Responsive
+              Design, SASS, Chai, Mocha, AWS Lambda, Seed, Netlify, Bootstrap.</p>
+          </li>
+          <li>
+            <h5>Qualification</h5>
+            <p>Certificate</p>
+          </li>
+          <li>
+            <h5>Institution</h5>
+            <p>Codecademy, New York </p>
+          </li>
+        </ul>
+
+
+        <ul>
+          <li>
+            <h5>Dates</h5>
+            <p>2017 - 2018</p>
+          </li>
+          <li>
+            <h5>Principal Studies</h5>
+            <p>Intensive study of - Colour, Perspective, Line, Composition, Drawing, Painting, Visual Art Elements.</p>
+          </li>
+          <li>
+            <h5>Qualification</h5>
+            <p>None</p>
+          </li>
+          <li>
+            <h5>Institution</h5>
+            <p>Vivian van de Merwe (Private Tuition - Stellenbosch University Lecturer )</p>
+          </li>
+        </ul>
+
+
+        <ul>
+          <li>
+            <h5>Dates</h5>
+            <p>2008 - 2012</p>
+          </li>
+          <li>
+            <h5>Principal Studies</h5>
+            <p>Afrikaans, English, Maths, Life Orientation, CAT, Hospitality, Visual Art</p>
+          </li>
+          <li>
+            <h5>Qualification</h5>
+            <p>National Senior Certificate</p>
+          </li>
+          <li>
+            <h5>Institution</h5>
+            <p>Jan van Riebeeck High School</p>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h5>Languages Spoken</h5>
+            <p>English / Afrikaans</p>
+          </li>
+        </ul>
+
+        <h3>References</h3>
+       
+        <div class="references">
+            <a id="email" href="./Rousant-refference.pdf" download>Rousant International</a>
+            <a id="email" href="./g.creative.pdf" download>Graham Lea-Cox (Composer)</a>
+            <a id="email" href="./h1nxc2ir.pdf" download>CodeCademy Certificate</a>
+            <a target="new" id="email" href="https://www.codecademy.com/profiles/greeffjeangmail.com">CodeCademy Portfolio</a>
+            <a id="email" href="./Stifled Consciousness Final  Proofed A5.pptx" download>AMEXCID Scholarship</a>
+            <a target="new" id="email" href="https://www.vivian.co.za/">Vivian van De Merwe</a>
+            <a target="new" id="email" href="https://www.facebook.com/Jean.Greeff.Artist">Jean Greeff Artist</a>
+
+        </div>
+     
+        
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
