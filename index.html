@@ -25,9 +25,11 @@
       <div class="logo"> Jean Greeff </div>
       <div class="git_hub">
           <a id="email" href="mailto:greeffjean@gmail.com?subject=Jean Greeff Portfolio">Email</a>
-        <div class="git_hub_link">
-          <img src="resources/githublogo.png"></img> <a target="new" href="https://github.com/greeffjean">Github</a>
-        </div>
+        <a target="new" href="https://github.com/greeffjean">
+            <div class="git_hub_link">
+                <img src="resources/githublogo.png"></img> <p>Github</p>
+              </div>
+        </a>
       </div>
     </div>
 
@@ -54,7 +56,7 @@
           <h5> My minified Sirion Cloud App I built with Serverless</h5>
             <ul>
                 <li> <span>&#8226;</span> <p>This app has been built with, React, CSS, AWS Amplify, React Router, Bootstrap and a Deezer API.</li>
-              <li> <span>&#8226;</span> <p>This app has been built with stateless React components, React hooks in an attempt to move away from class components and AWS Amplify.</p></li>
+              <li> <span>&#8226;</span> <p>This app has been built with stateless React components and React hooks in an attempt to move away from stateful class components.</p></li>
               <li> <span>&#8226;</span> <p>The React hooks - "useContext" and "createContext" are used to set a global state and
                   manages the applications Authentication in this way.</p> </li>
               <li> <span>&#8226;</span> <p>React Router is used to keeps the UI and the URL in sync.</p> </li>
@@ -64,14 +66,14 @@
               <li> <span>&#8226;</span> <p>There is a "useEffect" hook in use that allows users to stay logged in when a page
                   refresh occurs.</p></li>
               <li> <span>&#8226;</span> <p>I created a custom hook that manages user-form-field inputs in my application.</p></li>
-              <li> <span>&#8226;</span> <p>There is a music-genre-bar on the "SearchTracks" component that communicates with a Deezer API and returns
+              <li> <span>&#8226;</span> <p>There is a music-genre-bar in the "SearchTracks" component that communicates with a Deezer API and returns
                   data-objects which is then integrated into the DOM.</p></li>
-              <li> <span>&#8226;</span> <p>I created a component wrapper that handles all the routes which has made the routing of this application very easy.</p></li>
+              <li> <span>&#8226;</span> <p>I created a function wrapper that contains all our routes and handles all the routes which has made the routing of this application very simpler.</p></li>
               <li> <span>&#8226;</span> <p>Apart from our Auth integration using AWS Cognito we also use another service called DynamoDB which is a database the user will use to store
-                they're favourite tracks.
+                their favourite tracks.
               </p></li>
-              <li> <span>&#8226;</span> <p>Upon login the user will find a "home-page" which will query they're unique database bucket if it exists and display everything in there, here and in the component that handle's 
-                creating new database entries (SearchTracks.js) you can also find delete functionality that allows user's to remove tracks from they're buckets.
+              <li> <span>&#8226;</span> <p>Upon login the user will find a "home-page" which will query their unique database bucket if it exists and display everything in there, here and in the component that handle's 
+                creating new database entries (SearchTracks.js) you can also find delete functionality that allows user's to remove tracks from their buckets.
               </p></li>
               <li id="indent">
                   <button><a href="https://greeffjean_sirioncloud2.surge.sh" target="new">Visit Website</a></button>
@@ -96,7 +98,7 @@
             <li> <span>&#8226;</span> <p>I have made use of React Refs in the app to also sync users input with the app's main state, for
                 instance a html input field within a child component passes information to a top level
                 component and then sets the new state and returns a function to call on our Deezer API.</p></li>
-            <li> <span>&#8226;</span> <p>I have created a module that contains all our fetch functions, this module is exported
+            <li> <span>&#8226;</span> <p>I have created a module that contains all our fetch requests, this module is exported
                 and used by the home-component of the application and returns requested music data.</p></li>
             <li> <span>&#8226;</span> <p>Sirion Cloud makes use of inline class-name queries to ensure that the UI of the app is reflecting what's occuring with the main state of our application.</p></li>
             <li> <span>&#8226;</span> <p>I have created a favourites component that acts as a storage facility for the user's tracks that he/she will like.</p></li>
@@ -109,27 +111,27 @@
           <h5>My Movie Database Application</h5>
           <ul>
             <li><span>&#8226;</span><p>This app has been built with React, Sass, React Router and a film database API</p></li>
-            <li><span>&#8226;</span><p>The Movie Database App is an example of your typical google play store application.</p></li>
+            <li><span>&#8226;</span><p>The Movie Database App is basic example of your typical google play store application.</p></li>
             <li> <span>&#8226;</span> <p>This application has been built with stateful components which uses props to pass state to other components.</p></li>
             <li> <span>&#8226;</span> <p>React Router is used to keeps the UI and the URL in sync.</p> </li>
             <li><span>&#8226;</span><p>Here I make use of "The Movie Database" API.</p></li>
-            <li><span>&#8226;</span><p>I have stored all my API fetch functions in a module.</p></li>
+            <li><span>&#8226;</span><p>I have stored all my fetch methods in a module.</p></li>
             <li><span>&#8226;</span><p>Here we have made use of React's Ref attribute to access a top level component from a child component's "input field".</p></li>
             <li><span>&#8226;</span><p>I have used React's JSX syntax to inject component-state-data-objects into html components.</p></li>
             <li><span>&#8226;</span><p>Here is a basic run though of the applications build.</p></li>
-            <li><span>&#8226;</span><p>1. The App component renders a SearchBar and FilmDisplay component, and here I pass functions and state as props the child components.
+            <li><span>&#8226;</span><p>1. The App component renders a SearchBar and FilmDisplay component.
             </p></li>
             <li><span>&#8226;</span><p>2. FilmDisplay is assigned a route of "/" making it the default-route/homepage, we then get redirected by means of a React-Router Redirect feature and the
-              url changes to /film/:id, which also becomes the path to FilmDisplay's child that actually contains all the UI components that reflect the API data, this way assigning the URL route attribute "id"
+              url changes to /film/:id, which is also the assigned path of FilmDisplay's child that contains all the UI components that display the API call's data, this way assigning the URL route attribute "id"
               to the data-object's id selected by the user we can keep track of our routing.
             </p></li>
-            <li><span>&#8226;</span><p>3. FilmInfo is rendered by FilmDisplay and when this component is Mounted a API call fires and fetches the default-data of our home page along with the corresponding
-              id attribute of this object that the API function returned, which is then assigned to our route's "id" attribute. 
+            <li><span>&#8226;</span><p>3. FilmInfo is rendered by FilmDisplay and when this component is mounted a API call fires and fetches default-data for our home page,
+             when our function call returns a data-object, the "id" field in our object will be assigned to our "id" route attribute.
             </p></li>
             <li><span>&#8226;</span> <p>4. When a user uses the SearchBar component to search for film titles we access a module containing all our API fetch methods, we do this by using a
                "onChange" event listener on a input-html-component in SearchBar.</p></li>
-            <li><span>&#8226;</span><p>5. Once our search function has done its job and returned an array of data-objects the SearchBar component will display the array,
-               once a user selects an item from the list the state and UI of FilmInfo changes by means of an onClick event listener.
+            <li><span>&#8226;</span><p>5. Once our search function has done its job and returned an array of data-objects the SearchBar component will display the array in a list,
+               once a user selects an item from the list the state and UI of FilmInfo changes by means of a onClick event listener.
             </p></li>
             <li id="indent"><button><a href="https://greeffjean_moviedb.surge.sh/" target="new">Visit Website</a></button><button><a href="https://github.com/greeffjean/Movie-DB" target="new">GitHub</a></button></p></li>
           </ul>
