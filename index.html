@@ -18,7 +18,6 @@
 
 <body>
 
-
   <div class="main_wrapper">
 
     <!-- Nav -->
@@ -41,10 +40,10 @@
         <h1>Overview</h1>
         <p> I am a Front-End Developer, my particular strengths lie in building out UI and UX Front-End
           Applications with React,
-          I am ambitious and forward thinking, resourcefull and flexible. <button id=indent><a href="CV.pdf" download>Download CV</a></button>
+          I am ambitious and forward thinking, resourceful and flexible. <button id=indent><a href="CV.pdf" download>Download CV</a></button>
           <br>
           <br>
-          Furthermore I have an eye for detail, a determination to deliver excellent work and a positve attitude.
+          Furthermore I have an eye for detail, a determination to deliver excellent work and a positive attitude.
           <br>
           <br>
           <br>
@@ -52,7 +51,7 @@
           <h1>3 things in my resume you should not miss and why</h1>
           <br>
           <br>
-          <h5> My Auth Application I built with Serverless</h5>
+          <h5> My minified Sirion Cloud App I built with Serverless</h5>
             <ul>
                 <li> <span>&#8226;</span> <p>This app has been built with, React, CSS, AWS Amplify, React Router, Bootstrap and a Deezer API.</li>
               <li> <span>&#8226;</span> <p>This app has been built with stateless React components, React hooks in an attempt to move away from class components and AWS Amplify.</p></li>
@@ -61,27 +60,35 @@
               <li> <span>&#8226;</span> <p>React Router is used to keeps the UI and the URL in sync.</p> </li>
               <li> <span>&#8226;</span> <p>The Application's main components are wrapped in functions that grant or deny access to its's child components based on
                   the global authentication state variable's value, if the function returns false the user is redirected
-                  to a login page.</p> </li>
+                  to a login page, this has been set up using AWS Congnito service.</p> </li>
               <li> <span>&#8226;</span> <p>There is a "useEffect" hook in use that allows users to stay logged in when a page
                   refresh occurs.</p></li>
               <li> <span>&#8226;</span> <p>I created a custom hook that manages user-form-field inputs in my application.</p></li>
               <li> <span>&#8226;</span> <p>There is a music-genre-bar on the "SearchTracks" component that communicates with a Deezer API and returns
                   data-objects which is then integrated into the DOM.</p></li>
               <li> <span>&#8226;</span> <p>I created a component wrapper that handles all the routes which has made the routing of this application very easy.</p></li>
-              <li id="indent"><button><a href="https://github.com/greeffjean/my-app-client" target="new">GitHub</a></button></p></li>
+              <li> <span>&#8226;</span> <p>Apart from our Auth integration using AWS Cognito we also use another service called DynamoDB which is a database the user will use to store
+                they're favourite tracks.
+              </p></li>
+              <li> <span>&#8226;</span> <p>Upon login the user will find a "home-page" which will query they're unique database bucket if it exists and display everything in there, here and in the component that handle's 
+                creating new database entries (SearchTracks.js) you can also find delete functionality that allows user's to remove tracks from they're buckets.
+              </p></li>
+              <li id="indent">
+                  <button><a href="https://greeffjean_sirioncloud2.surge.sh" target="new">Visit Website</a></button>
+                  <button> <a href="https://github.com/greeffjean/my-app-client" target="new">GitHub</a></button></p></li>
           </ul>
 
           <br>
           <br>
-          <h5>My Music App, Sirion Cloud.</h5>
+          <h5>My Sirion-Cloud app I built out with React.JS.</h5>
           <ul>
               <li><span>&#8226;</span><p>This app has been built with React, Sass and a Deezer API</p></li>
             <li> <span>&#8226;</span> <p>Sirion Cloud uses a Deezer API and returns data-objects which is then integrated into the DOM, the UI and UX of this site is fresh and eye catching.</p></li>
-              <li> <span>&#8226;</span> <p>This application has been built with statefull components which uses props to pass state to other components.</p></li>
+              <li> <span>&#8226;</span> <p>This application has been built with stateful components which uses props to pass state to other components.</p></li>
             <li> <span>&#8226;</span> <p>This application contains in short a home-component, album-component, tracklist-component and a
                 favourites-component.</p> </li>
             <li> <span>&#8226;</span> <p>I have used JavaSript's fetch method to make requests to the Deezer database.</p></li>
-            <li> <span>&#8226;</span> <p>You will find a music player that keeps track of the current music-item selected accross the board, while
+            <li> <span>&#8226;</span> <p>You will find a music player that keeps track of the current music-item selected across the board, while
                 it can also skip back and forth, I built this out from scratch.
                 There is also multiple functions that check and make sure that the music player is in sync with the
                 applications state, for instance: it relies on a onplay and onpause event listener to ensure that the UI
@@ -92,7 +99,7 @@
             <li> <span>&#8226;</span> <p>I have created a module that contains all our fetch functions, this module is exported
                 and used by the home-component of the application and returns requested music data.</p></li>
             <li> <span>&#8226;</span> <p>Sirion Cloud makes use of inline class-name queries to ensure that the UI of the app is reflecting what's occuring with the main state of our application.</p></li>
-            <li> <span>&#8226;</span> <p>I have created a favourites component that acts as a storage facilty for the user's tracks that he/she will like.</p></li>
+            <li> <span>&#8226;</span> <p>I have created a favourites component that acts as a storage facility for the user's tracks that he/she will like.</p></li>
             <li> <span>&#8226;</span> <p>Sirion Cloud uses state to also keep track of which songs where selected as favourites and reflects that in the UI throughout the users session.</p></li>
             <li id="indent"><button><a href="https://greeffjean_sirion_cloud.surge.sh" target="new">Visit Website</a></button>
               <button><a href="https://github.com/greeffjean/Sirion-Cloud" target="new">GitHub</a></button></p> </li>
@@ -103,21 +110,21 @@
           <ul>
             <li><span>&#8226;</span><p>This app has been built with React, Sass, React Router and a film database API</p></li>
             <li><span>&#8226;</span><p>The Movie Database App is an example of your typical google play store application.</p></li>
-            <li> <span>&#8226;</span> <p>This application has been built with statefull components which uses props to pass state to other components.</p></li>
+            <li> <span>&#8226;</span> <p>This application has been built with stateful components which uses props to pass state to other components.</p></li>
             <li> <span>&#8226;</span> <p>React Router is used to keeps the UI and the URL in sync.</p> </li>
             <li><span>&#8226;</span><p>Here I make use of "The Movie Database" API.</p></li>
             <li><span>&#8226;</span><p>I have stored all my API fetch functions in a module.</p></li>
             <li><span>&#8226;</span><p>Here we have made use of React's Ref attribute to access a top level component from a child component's "input field".</p></li>
             <li><span>&#8226;</span><p>I have used React's JSX syntax to inject component-state-data-objects into html components.</p></li>
-            <li><span>&#8226;</span><p>Here is a basic run thtough of the applications build.</p></li>
+            <li><span>&#8226;</span><p>Here is a basic run though of the applications build.</p></li>
             <li><span>&#8226;</span><p>1. The App component renders a SearchBar and FilmDisplay component, and here I pass functions and state as props the child components.
             </p></li>
-            <li><span>&#8226;</span><p>2. FilmDisplay is assigned a route of "/" making it the default-route/homepage, whe then get redirected by means of a React-Router Redirect feature and the
-              url changes to /film/:id, which also becomes the path to FilmDisplay's child that actually contains all the UI components that reflect the API data, this way assinging the URL route attribute "id"
-              to the data-object's id selected by ther user we can keep track of our routing.
+            <li><span>&#8226;</span><p>2. FilmDisplay is assigned a route of "/" making it the default-route/homepage, we then get redirected by means of a React-Router Redirect feature and the
+              url changes to /film/:id, which also becomes the path to FilmDisplay's child that actually contains all the UI components that reflect the API data, this way assigning the URL route attribute "id"
+              to the data-object's id selected by the user we can keep track of our routing.
             </p></li>
             <li><span>&#8226;</span><p>3. FilmInfo is rendered by FilmDisplay and when this component is Mounted a API call fires and fetches the default-data of our home page along with the corresponding
-              id attribute of this object that the API function returned, which is then assinged to our route's "id" attribute. 
+              id attribute of this object that the API function returned, which is then assigned to our route's "id" attribute. 
             </p></li>
             <li><span>&#8226;</span> <p>4. When a user uses the SearchBar component to search for film titles we access a module containing all our API fetch methods, we do this by using a
                "onChange" event listener on a input-html-component in SearchBar.</p></li>
@@ -348,7 +355,7 @@
 
         <br>
         <br>
-        <h3>I am a valueble asset because</h3>
+        <h3>I am a valuable asset because</h3>
         <p>I really value and embody as best I can, integrity, quality and reliability.</p>
         <p>I work well in a team and learn really fast.</p>
         <p>Highly ambitious and love working with people.</p>
@@ -570,10 +577,6 @@
 
     </div>
   </div>
-
-
-
-
 
 
 </body>
